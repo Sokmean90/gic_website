@@ -17,7 +17,7 @@ class CreatePartner extends Migration
             $table->increments('id');
             $table->integer('name');
             $table->string('type')->nullable();
-            $table->string('description')->nullable();
+            $table->longText('description')->nullable();
         });
     }
 

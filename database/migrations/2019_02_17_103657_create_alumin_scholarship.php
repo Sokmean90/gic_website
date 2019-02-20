@@ -16,7 +16,7 @@ class CreateAluminScholarship extends Migration
         Schema::create('alumin_scholarship', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
-            $table->string('overview')->nullable();
+            $table->longText('overview')->nullable();
         });
     }
 

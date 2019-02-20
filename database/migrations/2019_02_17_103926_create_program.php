@@ -16,7 +16,7 @@ class CreateProgram extends Migration
         Schema::create('program', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
-            $table->string('description')->nullable();
+            $table->longText('description')->nullable();
         });
     }
 

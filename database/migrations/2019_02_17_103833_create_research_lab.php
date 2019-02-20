@@ -16,7 +16,7 @@ class CreateResearchLab extends Migration
         Schema::create('research_lab', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('responsible_person');
-            $table->string('description')->nullable();
+            $table->longText('description')->nullable();
         });
     }
 

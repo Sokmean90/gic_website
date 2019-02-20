@@ -19,7 +19,7 @@ class CreateGalleryItem extends Migration
             $table->string('image_id')->nullable();
             $table->string('youtube_id')->nullable();
             $table->string('youtube_url')->nullable();
-            $table->string('description')->nullable();
+            $table->longText('description')->nullable();
         });
     }
 

@@ -16,7 +16,7 @@ class CreateSiteContent extends Migration
         Schema::create('site_content', function (Blueprint $table) {
             $table->increments('id');
             $table->string('developer_name')->nullable();
-            $table->string('html_text')->nullable();
+            $table->longText('html_text')->nullable();
         });
     }
 

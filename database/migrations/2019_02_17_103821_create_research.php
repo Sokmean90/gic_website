@@ -16,7 +16,7 @@ class CreateResearch extends Migration
         Schema::create('research', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
-            $table->string('description')->nullable();
+            $table->longText('description')->nullable();
         });
     }
 

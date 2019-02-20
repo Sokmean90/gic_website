@@ -16,7 +16,7 @@ class CreateAnnualReport extends Migration
         Schema::create('annual_report', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title')->nullable();
-            $table->string('description')->nullable();
+            $table->longText('description')->nullable();
             $table->string('academic_year')->nullable();
             $table->integer('attachment_id');
         });
