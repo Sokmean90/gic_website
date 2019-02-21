@@ -10,6 +10,32 @@
            data-calc-target="#js-header">
 
         <!-- Carousel Slides -->
+        @if(!empty($list_slide))
+        @foreach($list_slide as $slide)
+        <div class="js-slide h-100 g-flex-centered g-bg-img-hero g-bg-cover g-bg-black-opacity-0_3--after" style="background-image: url(img/{{$slide->title}});">
+          <div class="container">
+            <div class="g-max-width-600 g-pos-rel g-z-index-1">
+              <a class="d-block g-text-underline--none--hover" href="#">
+                <span class="d-block g-color-white g-font-size-20--md mb-2">
+                  Making an Impact : <span class="g-brd-bottom--dashed g-brd-2 g-brd-primary g-color-primary g-font-weight-700 g-pb-2">Careers Day</span>
+                </span>
+                <span class="d-block g-color-white g-font-secondary g-font-size-25 g-font-size-45--md g-line-height-1_4">
+                  Explore career options October 12 at the Unify Arena.
+                </span>
+              </a>
+            </div>
+
+            <!-- Go to Button -->
+            <a class="js-go-to d-flex align-items-center g-color-white g-pos-abs g-bottom-0 g-z-index-1 g-text-underline--none--hover g-pb-60" href="#!" data-target="#content">
+              <span class="d-block u-go-to-v4 mr-3"></span>
+              <span class="g-brd-bottom--dashed g-brd-white-opacity-0_5 mr-1">scroll down</span> to find out more
+            </a>
+            <!-- End Go to Button -->
+          </div>
+        </div>
+        <!-- End Carousel Slides -->
+        @endforeach
+        @else
         <div class="js-slide h-100 g-flex-centered g-bg-img-hero g-bg-cover g-bg-black-opacity-0_3--after" style="background-image: url(assets/img-temp/1920x1080/img5.jpg);">
           <div class="container">
             <div class="g-max-width-600 g-pos-rel g-z-index-1">
@@ -80,6 +106,7 @@
           </div>
         </div>
         <!-- End Carousel Slides -->
+        @endif
       </div>
       <!-- End Carousel Slider -->
 
