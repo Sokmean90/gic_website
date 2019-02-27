@@ -17,10 +17,10 @@
             <div class="g-max-width-600 g-pos-rel g-z-index-1">
               <a class="d-block g-text-underline--none--hover" href="#">
                 <span class="d-block g-color-white g-font-size-20--md mb-2">
-                  Making an Impact : <span class="g-brd-bottom--dashed g-brd-2 g-brd-primary g-color-primary g-font-weight-700 g-pb-2">Careers Day</span>
+                  <a style="color:#FFFFFF;text-decoration: none;" href="{{ $slide->link_to }}">{!! $slide->title !!}</a>
                 </span>
                 <span class="d-block g-color-white g-font-secondary g-font-size-25 g-font-size-45--md g-line-height-1_4">
-                  Explore career options October 12 at the Unify Arena.
+                  {!! $slide->description !!}
                 </span>
               </a>
             </div>
