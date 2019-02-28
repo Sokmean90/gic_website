@@ -10,7 +10,7 @@ set('application', 'gic_website');
 set('repository', 'git@gitlab.com:gic_website/gic_website.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
-set('git_tty', true);
+set('git_tty', false);
 
 // Shared files/dirs between deploys
 add('shared_files', []);
