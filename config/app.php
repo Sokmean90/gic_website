@@ -175,6 +175,7 @@ return [
         /*
          * Package Service Providers that aren't auto-discover...
          */
+        TCG\Voyager\VoyagerServiceProvider::class,
 
         /*
          * Application Service Providers...
