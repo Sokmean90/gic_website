@@ -37,3 +37,8 @@ Route::get('/home',[
     'as' => 'menu.home',
     'uses' => 'Frontend/HomeController@index'
 ]);
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

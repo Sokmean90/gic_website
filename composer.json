@@ -118,5 +118,11 @@
             "./vendor/bin/php-cs-fixer fix routes/  --show-progress=estimating",
             "./vendor/bin/php-cs-fixer fix tests/  --show-progress=estimating"
         ]
+    },
+    "repositories": {
+        "hooks": {
+            "type": "composer",
+            "url": "https://larapack.io"
+        }
     }
 }
