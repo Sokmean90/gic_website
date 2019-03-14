@@ -17,6 +17,7 @@ Route::get('lang/{lang}', [LanguageController::class, 'swap']);
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     include_route_files(__DIR__.'/frontend/');
 });
+Route::get('scholarship', 'ScholarshipControler@index')->name('scholarship.index');
 
 /*
  * Backend Routes

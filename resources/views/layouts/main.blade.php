@@ -252,8 +252,8 @@
                               </a>
                             </li>
                             <li class="py-2">
-                              <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-current-students-1.html">
-                                Current Students
+                              <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="/scholarship">
+                                Scholarship
                                 <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
                               </a>
                             </li>
@@ -358,8 +358,8 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="page-current-students-1.html">
-                      Current Students
+                    <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="/scholarship">
+                      Scholarship
                     </a>
                   </li>
                   <li class="nav-item">
@@ -388,6 +388,7 @@
     @show
       <!-- End Header -->
   	@yield('container')
+    @include('layouts.footer')
   	<script src="{!! url('/') !!}/unify/html/assets/vendor/jquery/jquery.min.js"></script>
     <script src="{!! url('/') !!}/unify/html/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
     <script src="{!! url('/') !!}/unify/html/assets/vendor/popper.js/popper.min.js"></script>
