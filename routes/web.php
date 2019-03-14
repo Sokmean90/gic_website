@@ -1,15 +1,19 @@
 <?php
 
-use App\Http\Controllers\LanguageController;
-
 /*
- * Global Routes
- * Routes that are used between both frontend and backend.
- */
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
 
-// Switch between the included languages
-Route::get('lang/{lang}', [LanguageController::class, 'swap']);
+Route::get('/', 'HomeController@index');
 
+<<<<<<< HEAD
 /*
  * Frontend Routes
  * Namespaces indicate folder structure
@@ -18,23 +22,9 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     include_route_files(__DIR__.'/frontend/');
 });
 Route::get('scholarship', 'ScholarshipControler@index')->name('scholarship.index');
+=======
+>>>>>>> 0cb17c5c26c1011aac4fb11eeb20091b79c5158a
 
-/*
- * Backend Routes
- * Namespaces indicate folder structure
- */
-Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin'], function () {
-    /*
-     * These routes need view-backend permission
-     * (good if you want to allow more than one group in the backend,
-     * then limit the backend features by different roles or permissions)
-     *
-     * Note: Administrator has all permissions so you do not have to specify the administrator role everywhere.
-     * These routes can not be hit if the password is expired
-     */
-    include_route_files(__DIR__.'/backend/');
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
-Route::get('/home',[
-    'as' => 'menu.home',
-    'uses' => 'Frontend/HomeController@index'
-]);
