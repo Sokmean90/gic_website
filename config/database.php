@@ -63,15 +63,9 @@ return [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
-<<<<<<< HEAD
-            'database' => env('DB_DATABASE', 'school_db'),
-            'username' => env('DB_USERNAME', 'postgres'),
-            'password' => env('DB_PASSWORD', '123'),
-=======
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
->>>>>>> 0cb17c5c26c1011aac4fb11eeb20091b79c5158a
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
