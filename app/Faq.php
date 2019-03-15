@@ -4,11 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SlideShow extends Model
+class Faq extends Model
 {
+    //
     protected $fillable = [
     	'question',
-    	'description',
-    	'image_id'
+    	'answer',
+    	'type'
     ];
 }
